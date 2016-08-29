@@ -58,5 +58,5 @@ module.exports = function slackUsers(options, cb) {
 };
 
 function url(team, token) {
-  return `https://${team}.slack.com/api/users.list?token=${token}&presence=1`;
+  return 'https://' + team + '.slack.com/api/users.list?token=' + token + '&presence=1';
 }
